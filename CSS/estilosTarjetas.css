@@ -1,0 +1,180 @@
+
+.menuTarjetas{
+    width: 400px;
+    position: sticky !important;
+    top: 0 !important;
+    overflow: hidden;
+}
+
+.tituloMenu{
+    background-color: #006a4b;
+    color: #f1f1f1;
+    padding: 20px;
+}
+.menus{
+    background-color: #c7c7c7;
+}
+.menus ul{
+    background-color: #c7c7c7;
+    padding: 10px 0 10px 0;
+    list-style-type:none ;
+    margin-left: 10px;
+}
+.menus li{
+    /* display: none; */
+    cursor: pointer;
+    padding: 15px 0 15px 10px;
+}
+.menus li:hover{
+    transition: 0.5s;
+    background-color: #006a4b;
+    color: #f1f1f1;
+}
+.menus li span{
+    margin-left: 20px;
+}
+#listaConsulta:hover,
+#listaGestion:hover
+{
+    cursor: pointer;
+}
+
+
+.contenidoTarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contenidoTarjetas form{
+    display: flex;
+    flex-direction: column;
+}
+.labelSaldos{
+    text-align: left;
+    width: 500px;
+    font-size: 25px;
+}
+form select{
+    width: 500px;
+    height: 50px;
+    outline: none;
+    border-color: #006a4b;
+    margin: 0 20px 20px 20px;
+}
+form p{
+    margin: 20px 20px 0 20px;
+}
+form input[type='submit']{
+    width: 200px;
+    padding: 10px;
+    background-color: gray;
+    border: none;
+    margin: 20px;
+    color: #f1f1f1;
+}
+.resultados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.resultados table{
+    width: 600px;
+    text-align: center;
+}
+.tabla-movimientos{
+    height: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.tabla-movimientos::-webkit-scrollbar {
+    width: 8px;              
+}
+      
+.tabla-movimientos::-webkit-scrollbar-track {
+    background: transparent;        
+}
+      
+.tabla-movimientos::-webkit-scrollbar-thumb {
+    background-color: grey;  
+}
+
+th,td,tr{
+    padding: 10px;
+
+}
+td{
+    text-align: right;
+    border-bottom: 1px solid grey;
+}
+th{
+    border-bottom: 1px solid grey;
+}
+
+#fechas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+.Ffin{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Ffin input{
+    padding: 10px;
+    color: #006a4b;
+}
+.Finicio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Finicio input{
+    padding: 10px;
+    color: #006a4b;
+}
+
+
+
+.mensajeError{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+    background-color: #fec14a;
+    color: #2f2f2f;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(30, 30, 30, 0.4);
+}
+
+.swal2-confirm{
+    background-color: #2f2f2f !important;
+    color: #fec14a !important;
+}
+
+.cantidadRecarga{
+    width: 100px;
+    height: 50px;
+    outline: none;
+    color: #006a4b;
+}
+.opcionesRecarga{
+    width: 200px;
+    height: 50px;
+    color: #006a4b;
+}
+
+@media only screen and (max-width: 700px) {
+    .fila {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }

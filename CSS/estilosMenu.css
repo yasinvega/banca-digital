@@ -1,0 +1,172 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+  /* --MENU LATERAL-- */
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,106,75,1) 100%);
+}
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    display: block;
+
+  }
+  .sidebar p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+  }
+  
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    transition: 0.5s;
+    z-index: 1;
+    background-color: #006346;
+  }
+
+  #main .titulo{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+ 
+  }
+  #main .titulo h2{
+    margin-top: 10px;
+  }
+  .sidebar svg{
+    fill: white !important;
+    margin-right: 10px;
+  }
+
+  .sidebar h2{
+    color: #f1f1f1;
+    text-align: center;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  .perfil{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+  }
+  .perfil img{
+    width: 100px;
+    height: 100px;
+  }
+  .perfil p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+
+  .nombre {
+      color: #f1f1f1;
+      margin-top: 10px;
+      display: contents !important;
+  }
+
+  .cerrar{
+      margin-top:0;
+  }
+
+  .imagen-logo img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  #ajustes{
+    cursor:pointer;
+  }
+  .listaajustes{
+      display: none;
+      flex-direction: column;
+      font-size: 10px !important;
+      margin-left: 15px;
+      list-style-type: none;
+      transition: .5s;
+  }
+  .listaajustes a {
+    font-size: 15px !important;
+  }
+  .arrow{
+    width: 20px;
+    height: 20px;
+  }
+  .listaajustes:active {
+    display: flex;
+  }
+
+  /*redes*/
+  .redes ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .redes ul li{
+    color: #006346;
+    margin-right: 20px;
+  }
+  .redes svg{
+    width: 48px;
+    height: 48px;
+    fill : #006346;
+    transition: .2s;
+  }
+  .reder li:hover{
+    background: #fec149;
+    border-radius: 100%;
+  }

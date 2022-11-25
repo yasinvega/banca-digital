@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+ 
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../Imagenes/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------contenedor login-------------------------------*/
+.login{
+    width: 420px !important;
+    height: 474px;
+    background: #F0F2FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 0 !important;
+}
+.enlaces{
+    display: flex;
+}
+.enlaces .in{
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: #5e7e12;
+    padding: 20px;
+    border-top-right-radius: 35px;
+    box-shadow: 40px 0 0 0 #5e7e12;
+}
+.enlaces .up{
+   width: 50%;
+   text-align: center;
+   text-decoration: none;
+   color: white;
+   padding: 20px;
+   background-color:#5e7e12 ;
+   border-bottom-left-radius: 27px;
+   box-shadow: 0 40px 0 0 #f8f9fa;
+   border-top-right-radius: 20px;
+}
+
+/*-----------------------contenedor login-------------------------------*/
+
+/*-----------------------formulario-------------------------------*/
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 40px;
+}
+/*------------------INPUTS-----------------------*/
+.input-group {
+    position: relative;
+  }
+  
+  .input {
+    border: 3px solid #95c721;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #95c721;
+    margin-bottom: 40px;
+  }
+  
+  .user-label {
+    position: absolute;
+    left: 15px;
+    color: #95c721;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 350ms;
+  }
+  
+  .input:focus,
+  input:valid {
+    outline: none;
+    --angle: 0deg;
+    border-bottom: 3px solid;
+    border-color: #5e7e12;
+    animation: 3s rotate9234 linear infinite;
+  }
+  
+  @keyframes rotate9234 {
+    to {
+      --angle: 360deg;
+    }
+  }
+  
+
+  .input:focus~label,
+  input:valid~label {
+    transform: translateY(235%) scale(1);
+    background-color: #f8f9fa;
+    padding: 0 .2em;
+    color: #5e7e12;
+  }
+ /*------------------INPUTS-----------------------*/
+  /*------------------BOTON ENTRAR-----------------------*/
+  button {
+    --color: #5e7e12;
+    background-color: #f8f9fa;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   button:hover {
+    color: #f8f9fa;
+   }
+   
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: #5e7e12;
+    transition: background 0s;
+   }
+  /*-----------------------formulario-------------------------------*/
+  .contenedorMensaje{
+    width: 420px;
+    margin-top: 20px;
+    font-size: 10px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #5e7e12;
+    background-color: #f1f1f1; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+   .mensaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 10px;
+  }
+  .error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: re;
+    color:red;
+    top:47%;
+    
+  }

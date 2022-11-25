@@ -1,0 +1,225 @@
+.menuCuentas{
+    width: 20vw !important;
+    background-color: rgb(199, 199, 199);
+    padding: 0;
+    margin: 0;
+    margin-top: 10vh;
+    position: sticky !important;
+    top: 0 !important;
+}
+
+.Titulo p{
+    background-color: #006346;
+    color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    margin: 0;
+    text-transform: uppercase;
+}
+.tipo{
+    background-color: rgb(199, 199, 199);
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.acciones p{
+    background-color: rgb(199, 199, 199);
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+.acciones p:hover{
+    background-color:  #006346;
+    color: #f1f1f1;
+}
+
+.info-cuenta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info-cuenta h3{
+        text-align: left;
+        margin-bottom: 5vh;
+}
+.cuenta{
+    padding: 15px 20px;
+    width: 30vw;
+    text-align: left;
+    border-color:#006346;
+    outline: none;
+}
+.fecha{
+    margin-top: 20px;
+    color:#006346
+}
+.fecha input[type='date']{
+    padding: 10px;
+    color: #006346;
+    margin-right: 10px;
+}
+.fecha select{
+    float: right;
+    padding: 10px;
+    height: 45px;
+    width: 150px;
+    background-color: #f1f1f1;
+    border: 1px solid #006346;
+    color: #006346;
+}
+
+form input[type='submit']{
+    margin-top: 20px;
+    background-color: #9d9d9d;
+    /* background-color: #fec14a; */
+    color: #f1f1f1;
+    width: 200px;
+    padding: 10px 20px;
+    border: none;
+}
+.lateralMovimientos{
+    width: 20vw !important;
+    padding: 0;
+    margin: 0;
+}
+.tablaMovimientos{
+    width: 600px;
+    height: auto;
+    /* overflow:scroll; */
+    margin-bottom: 5vh;
+    margin: auto;
+}
+th{
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+td,th,tr{
+    padding:10px;
+
+}
+.concepto{
+    text-decoration: underline;
+}
+.cantidad{
+    color: #fec14a;
+}
+.movimientos a{
+    text-decoration: none;
+    color: black;
+    margin-left: 8vw;
+}
+.movimientos a:hover{
+    color: black;
+}
+.movimientos{
+    height: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.movimientos::-webkit-scrollbar {
+    width: 8px;              
+  }
+  
+  .movimientos::-webkit-scrollbar-track {
+    background: transparent;        
+  }
+  
+  .movimientos::-webkit-scrollbar-thumb {
+    background-color: grey;  
+  }
+  
+.tablaSaldo{
+    width: 600px;
+    height: 500px;
+    overflow:scroll;
+    margin-bottom: 5vh;
+    margin: auto;
+}
+.tablaSaldo th{
+    border-bottom: 2px solid black !important;
+    font-weight: bold !important;
+    padding: 15px !important;
+    width: 200px !important;
+}
+.tablaSaldo td{
+    border-bottom: 2px solid black !important;
+    padding: 15px !important;
+    text-align: right !important;
+}
+.limiteTH{
+    text-align: right !important;
+}
+.limiteTD{
+    text-align: left !important ;
+}
+/*LOADER*/
+.contenedorLoader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 207px;
+    padding: 5px;
+  }
+  .loader {
+    --height-of-loader: 4px;
+    --loader-color: #006346;
+    width: 60%;
+    height: var(--height-of-loader);
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.2);
+    position: relative;
+   }
+   
+   .loader::before {
+    content: "";
+    position: absolute;
+    background: var(--loader-color);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    animation: moving 1s ease-in-out infinite;
+    ;
+   }
+   
+   @keyframes moving {
+    50% {
+     width: 100%;
+    }
+   
+    100% {
+     width: 0;
+     right: 0;
+     left: unset;
+    }
+   }
+
+   #carga{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+    z-index: -1;
+   }
+
+
+   @media only screen and (max-width: 700px) {
+    .fila {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }

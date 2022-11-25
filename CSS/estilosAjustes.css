@@ -1,0 +1,215 @@
+.menuAjustes{
+    width: 400px;
+    position: sticky !important;
+    top: 0 !important;
+    overflow: hidden;
+}
+
+.tituloAjustes{
+    background-color: #006a4b;
+    color: #f1f1f1;
+    padding: 20px;
+}
+.menus{
+    background-color: #c7c7c7;
+}
+.menus ul{
+    background-color: #c7c7c7;
+    padding: 10px 0 10px 0;
+    list-style-type:none ;
+    margin-left: 10px;
+}
+.menus li{
+    /* display: none; */
+    cursor: pointer;
+    padding: 15px 0 15px 10px;
+}
+.menus li:hover{
+    transition: 0.5s;
+    background-color: #006a4b;
+    color: #f1f1f1;
+}
+.menus li span{
+    margin-left: 20px;
+}
+#listaAlertas:hover,
+#listaSeguridad:hover,
+#listaDatos:hover
+{
+    cursor: pointer;
+}
+h3{
+    text-align: center;
+    padding: 10px;
+}
+.formularioAjustes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    padding: 10px;
+    margin-bottom: 2vh;
+    width: 200px;
+    outline: none;
+}
+
+form select{
+    padding: 15px;
+    width: 300px;
+    outline: none;
+    border: 1px solid #006a4b;
+    margin-bottom: 5vh;
+}
+
+.divCantidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.divCantidad input{
+    margin: auto;
+    margin-bottom:5vh ;
+    outline: none;
+}
+
+input[type='submit']{
+    border:none;
+}
+.btnSeguridad{
+    padding: 10px;
+    border:none;
+    margin: auto;
+    display: flex;
+    width: 220px;
+    justify-content: center;
+}
+.divSeguridad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.actual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4vh;
+}
+.actual input{
+    padding: 10px;
+    outline: none;
+}
+.nuevo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4vh;
+}
+.nuevo input{
+    padding: 10px;
+    outline: none;
+}
+.Repnuevo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4vh;
+}
+.Repnuevo input{
+    padding: 10px;
+    outline: none;
+}
+#formularioAjustes label{
+    margin-bottom: 10px;
+}
+
+.aviso{
+    padding: 10px;
+    border: 2px solid #006a4b;
+    margin: auto;
+    font-weight: bold;
+    margin-top: 4vh;
+    width: fit-content;
+}
+
+table{
+    margin: auto;
+    padding: 10px;
+    width: 600px;
+    height: 400px;
+}
+
+th{
+    border-bottom: 1px solid grey;
+}
+
+td{
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+.contact{
+    text-align: center;
+}
+
+.tituloDatos{
+    border-bottom: 2px solid black;
+    width: 600px;
+    margin: auto;
+}
+
+.volver{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    background-color: #006a4b;
+    color: #f1f1f1;
+    width: 100px;
+    border: none;
+  justify-content: center;
+  margin-top: 20px;
+}
+.volverPass{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    background-color: #006a4b;
+    color: #f1f1f1;
+    width: 100px;
+    border: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+.volverPass a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+.avisos{
+    width: 400px;
+    display:block;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    border: 2px solid #006a4b;
+}
+
+@media only screen and (max-width: 700px) {
+    .fila {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
